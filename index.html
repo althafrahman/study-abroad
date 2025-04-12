@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Nursing in Australia</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -13,10 +14,9 @@
     </header>
 
     <div class="banner">
-      <img src="./img/banner4.png" alt="Nursing Image" />
+      <img src="./img/banner.png" alt="Nursing Image" />
       <div class="content">
-        <h2>Study Nursing</h2>
-        <h1>Australia</h1>
+        <h2>Study Nursing in <span>Australia</span></h2>
       </div>
 
       <div class="form-card">
@@ -26,84 +26,73 @@
           Intakes.
         </p>
         <p style="font-size: 14px">Our Expert will get back to you.</p>
-        <div class="form-group">
-          <input type="text" placeholder="Full Name" />
+        <form id="contactForm" action="contact_process.php" method="post" >
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" name="name" pattern="^[a-zA-Z]+(?: [a-zA-Z]+)+$" required/>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Telephone" name="phone" pattern="[0-9]+" required/>
+          </div>
+          <div class="form-group">
+            <select name="program" required>
+              <option value="" disabled selected>Choose Preferred Program</option>
+              <option value="BSc Nursing">BSc Nursing</option>
+              <!-- <option value="Masters">Choose Masters</option> -->
+              <option value="Other Enquiry">Other Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <div class="loader-overlay" id="loader">
+          <div class="loader"></div>
         </div>
-        <div class="form-group">
-          <input type="text" placeholder="Telephone" />
-        </div>
-        <div class="form-group">
-          <select>
-            <option>Choose Preferred Program</option>
-            <option value="Degree">Degree</option>
-            <option value="Masters">Choose Masters</option>
-            <option value="Other Enquiry">Other Enquiry</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <button type="submit">Submit</button>
-        </div>
+      
       </div>
     </div>
 
     <section class="content">
-      <h2>Do you want to learn nursing in Australia?</h2>
-      <p>Here's a golden chance for those who dream of the best career.</p>
-      <p>
-        <strong>International Study Academy</strong> gives you the best nursing
-        courses in Australia.
-      </p>
-      <p>
-        After studying in India, you can only work in Australia if you pass the
-        exam with an <strong>IELTS 7</strong> or <strong>OET B</strong> score.
-      </p>
-      <p>
-        Do not let the time studying 4 years in India and work for a year. In
-        Australia, you can study only 3 years and get a job.
-      </p>
-      <p>
-        Our 24-year commitment is our guarantee. We have an office in Sydney for
-        any of your needs.
-      </p>
-      <p>
-        You will also get the direct help of the University. We are with you to
-        make your dreams a reality. Contact us for more information.
-      </p>
-    </section>
-
-    <section class="features">
-      <div>
-        <img src="./img/check.png" style="width: 76px" /><br />FREE IELTS/PTE
-      </div>
-      <div>
-        <img src="./img/check.png" style="width: 76px" /><br />Scholarships
-      </div>
-      <div>
-        <img src="./img/check.png" style="width: 76px" /><br />High Visa
-        Approval
-      </div>
+      <h2>3 year course with 3 year stayback</h2>
     </section>
 
     <section class="why-choose">
-      <h2>WHY CHOOSE US</h2>
+      <h2>HOW DO WE DIFFER</h2>
       <div class="why-cards">
         <div>Direct Representative Australia Universities</div>
-        <div>Local Offices in Sydney, Australia<br />Tel: +61 466 41 1444</div>
-        <div>Licensed Visa/ Migration Agent</div>
+        <div>Offices in India & Australia <br /> Kochi: 80865 11555 <br />Sydney: +61 466 41 1444</div>
+        <div>Visa/ Migration Help Australia Government Authorised Migration Agent MARA#1801063</div>
       </div>
     </section>
 
-    <section class="testimonials">
+    <section class="features">
+      <h2>WHY CHOOSE US</h2>
+      <div>
+        <div>
+          <img src="./img/check.png" style="width: 76px" /><br />Free IELTS/PTE
+        </div>
+        <div>
+          <img src="./img/check.png" style="width: 76px" /><br />Upto 50% Scholarships
+        </div>
+        <div>
+          <img src="./img/check.png" style="width: 76px" /><br />100% visa success - Feb 2025 Intake 
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="testimonials testimonial-student">
       <h2>What Our Students Say</h2>
       <div class="slider-wrapper">
         <div class="arrow left" onclick="prevSlideStudent()">&#10094;</div>
 
-        <div class="slider-track" id="sliderTrackStudentSay">
+        <div class="slider-track" id="sliderTrackStudentSay"> 
           <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/bvOxHFYcs_k"
+              height="500"
+              src="https://www.youtube.com/embed/NtPMZ2hR7Vk"
               title="YouTube Shorts video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -114,8 +103,8 @@
                     <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/NtPMZ2hR7Vk"
+              height="500"
+              src="https://www.youtube.com/embed/soPnYueQ2U0"
               title="YouTube Shorts video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -126,8 +115,8 @@
           <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/wTuvGrzV1gs"
+              height="500"
+              src="https://www.youtube.com/embed/d0i3yT6SP30"
               title="YouTube Shorts video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -138,19 +127,7 @@
           <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/DXj6hWNc7Io"
-              title="YouTube Shorts video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div class="testimonial-card testimonial-card-student">
-            <iframe
-              width="360"
-              height="640"
+              height="500"
               src="https://www.youtube.com/embed/sIYWUooBcjg"
               title="YouTube Shorts video player"
               frameborder="0"
@@ -162,8 +139,8 @@
           <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/tUW4oXa3DRw"
+              height="500"
+              src="https://www.youtube.com/embed/CfU7fcmMwKw"
               title="YouTube Shorts video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -174,8 +151,8 @@
           <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/ojK0jd-1cTY"
+              height="500"
+              src="https://www.youtube.com/embed/DkcRVmaMgqk"
               title="YouTube Shorts video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -186,8 +163,8 @@
           <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/QF15iGB0sxQ"
+              height="500"
+              src="https://www.youtube.com/embed/36g-iLF3CjA"
               title="YouTube Shorts video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -198,8 +175,8 @@
           <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/TL8sCpEHqwY"
+              height="500"
+              src="https://www.youtube.com/embed/RoPzq8uAeus"
               title="YouTube Shorts video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -210,20 +187,8 @@
           <div class="testimonial-card testimonial-card-student">
             <iframe
               width="360"
-              height="640"
-              src="https://www.youtube.com/embed/kqoWtfUF0Ec"
-              title="YouTube Shorts video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div class="testimonial-card testimonial-card-student">
-            <iframe
-              width="360"
-              height="640"
-              src="https://www.youtube.com/embed/SmbrAdiA_Kc"
+              height="500"
+              src="https://www.youtube.com/embed/H46qv1AknjU"
               title="YouTube Shorts video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -337,7 +302,7 @@
 
       function handleScroll() {
         const isMobile = window.innerWidth <= 768;
-        const scrolled = window.scrollY > 100;
+        const scrolled = window.scrollY > 500;
 
         if (isMobile && scrolled) {
           contactusBtn.style.display = "block";
@@ -380,6 +345,14 @@
   function updateSliderStudent(){
     sliderTrackStudent.style.transform = `translateX(-${100 * currentIndexStudent}%)`;
   }
+
+
+  const form = document.getElementById('contactForm');
+    const loader = document.getElementById('loader');
+
+    form.addEventListener('submit', function () {
+      loader.style.display = 'flex';
+    });
 
 
     </script>

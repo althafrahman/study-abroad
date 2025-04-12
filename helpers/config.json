@@ -1,0 +1,8 @@
+{
+    "appUserName":"na.offer@gmail.com",
+    "appSecret": "yylpfefbylrzygku",
+    "recieverMail": "na.offer@gmail.com",
+    "recieverName": "International Academy",
+    "smtpHost": "smtp.gmail.com",
+    "smtpPort": 587
+}   
